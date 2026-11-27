@@ -1,0 +1,7 @@
+{
+  "name": "wifi-lock",
+  "version": "1.0.0",
+  "description": "Keeps Wi-Fi in low-latency mode while the camera picture is shown",
+  "main": "index.ts",
+  "private": true
+}

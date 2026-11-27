@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "AiPi Cam",
+    "slug": "aipi-cam",
+    "version": "1.1.0",
+    "orientation": "landscape",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0b0d10",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.aipicam.viewer",
+      "versionCode": 11,
+      "permissions": [
+        "INTERNET",
+        "ACCESS_WIFI_STATE",
+        "ACCESS_NETWORK_STATE",
+        "CHANGE_WIFI_STATE",
+        "ACCESS_FINE_LOCATION",
+        "WAKE_LOCK"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#0b0d10",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "./plugins/withNetworkSecurity",
+      "react-native-wifi-reborn",
+      "expo-audio",
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "dc2fc7b4-b568-4df6-b59c-cf8232726a17"
+      }
+    },
+    "owner": "samehalbadry2727383i3"
+  }
+}
